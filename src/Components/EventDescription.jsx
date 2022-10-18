@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import bg from '../Utils/bg.webp';
 import soa from '../Utils/soa logo.webp';
@@ -10,10 +10,9 @@ export default function EventDescription() {
                 <img src={soa} alt="" />
             </div>
             <div className="container2">
-                <p>3rd International Conference on</p>
+                <p>4th International Conference on</p>
                 <p>Recent Advances in Mechanical Engineering Research and Development</p>
-                <p>ICRAMERD - 22</p>
-                <p>IN VIRTUAL MODE</p>
+                <p>ICRAMERD - 23</p>
             </div>
         </Container>
     )

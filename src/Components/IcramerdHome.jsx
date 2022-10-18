@@ -7,12 +7,12 @@ export default function IcramerdHome() {
     return (
         <Conatiner style={{ backgroundImage: `url(${bg})` }}>
             <div className="yr22">
-                <p>ICRAMERD - 22</p>
+                <p>ICRAMERD - 23</p>
                 <p>24th - 25th Jul 2020</p>
                 <Link to="icramerd22">View More</Link>
             </div>
             <div className="yr23">
-                <p>ICRAMERD - 21</p>
+                <p>ICRAMERD - 22</p>
                 <p>24th - 25th Sep 2021</p>
                 <Link to="icramerd23">View More</Link>
             </div>

@@ -1,26 +1,20 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
-import img1 from '../Utils/carasouel1.webp';
-import img2 from '../Utils/carasouel2.webp';
+import img from '../Utils/iter.jpg';
 
 
 export default function CaraouselDes() {
-    const [img, setimg] = useState(img1);
-    setInterval(() => {
-        img===img1?setimg(img2):setimg(img1);
-    }, 5000);
     return (
         <Container>
-            <p>As a precautionary measure to the increasing COVID cases and adhering to the Govt. guidelines, ICRAMERD 22 will be in Virtual mode.</p>
-            <div className="scrolling">
+            {/* <div className="scrolling">
                 <p>*Following up on this year's success, we are glad to announce the dates of ICRAMERD 2023. Coference Date: 20th - 22nd July, 2023. *</p>
-            </div>
+            </div> */}
             <img src={img} alt="" />
         </Container>
     )
 }
 const Container = styled.div`
-    height: 22rem;
+    height: 24rem;
     background-color: #222121;
     display: flex;
     justify-content: center;
@@ -44,8 +38,8 @@ const Container = styled.div`
         }
     }
     img{
-        height: 18rem;
-        width: 51.8rem;
+        height: 21rem;
+        width: 45rem;
     }
     @keyframes scroller {
         0%{

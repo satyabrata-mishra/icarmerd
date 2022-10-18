@@ -10,8 +10,8 @@ export default function Navbar() {
         <Link to="/">Home</Link>
         <Link to="">Previous Confrences
           <ul>
-            <li><Link to="icramerd21">2021</Link></li>
-            <li><Link to="icramerd22">2022</Link></li>
+            <li><Link to="icramerd21">2022</Link></li>
+            <li><Link to="icramerd22">2023</Link></li>
           </ul>
         </Link>
         <Link to="call-for-papers">Submission</Link>
