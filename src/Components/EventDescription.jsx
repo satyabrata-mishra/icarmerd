@@ -23,6 +23,7 @@ height: 12rem;
 display: flex;
 justify-content: center;
 align-items: center;
+background-position: center;
 .container2{
     p{
         margin: 0.2rem 0;
