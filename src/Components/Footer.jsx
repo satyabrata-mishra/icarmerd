@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import soa from '../Utils/soa logo.webp';
-import iiie from '../Utils/IIIE logo.webp';
 
 export default function Footer() {
     return (
@@ -12,11 +11,6 @@ export default function Footer() {
                     <img src={soa} alt="" />
                     <p>S'O'A University</p>
                 </div>
-                <div className="container2">
-                    <p>In Collaboration with,</p>
-                    <img src={iiie} alt="" />
-                    <p>IIIE Odisha Chapter</p>
-                </div>
                 <div className="container3">
                     <p>Department of Mechanical Engineering</p>
                     <p>Institute of Technical Education and Research</p>
@@ -26,11 +20,11 @@ export default function Footer() {
                     <p>Bhubaneswar, Odisha, India</p>
                 </div>
                 <div className="container4">
-                    <p>Tel: 9778331433</p>
-                    <p>Email - icramerd22@soa.ac.in</p>
+                    <p>Tel: 9114639291</p>
+                    <p>Email - icramerd23@soa.ac.in</p>
                 </div>
             </div>
-            <p className='copy'>&#169; 2021 by ICRAMERD.</p>
+            <p className='copy'>&#169; 2022 by ICRAMERD.</p>
         </Container>
     )
 }
@@ -48,6 +42,8 @@ align-items: center;
     border-bottom: 1px solid white;
     padding-bottom: 4rem;
     .container1{
+        height: 8rem;
+        border-right: 1px solid white;
         p{
             text-align: center;
             color: rgb(232, 74, 67);
@@ -55,20 +51,6 @@ align-items: center;
             font-size: 0.8rem;
             letter-spacing: 0.01rem;
             font-weight: 600;
-        }
-    }
-    .container2{
-        p{
-            text-align: center;
-            color: rgb(232, 74, 67);
-            font-family: 'Poppins', sans-serif;
-            font-size: 0.8rem;
-            letter-spacing: 0.01rem;
-            font-weight: 600;
-        }
-        img{
-            padding-right: 1rem;
-            border-right:1px solid white;
         }
     }
     .container3{
@@ -115,9 +97,30 @@ align-items: center;
     color: white;
     font-size: 0.9rem;
     position: relative;
-    right: 20rem;
 }
 @media only screen and (max-width: 550px){
-    
+    height: 28rem;
+    .contains{
+        flex-direction: column;
+        padding: 0;
+        .container1{
+            border: none;
+            margin-top: -1rem;
+            img{
+                height: 7rem;
+            }
+        }
+        .container3{
+            border: none;
+            margin-top: 2rem;
+        }
+        .container4{
+            margin-right: 5.5rem;
+            margin-top: 2rem;
+            p{
+                font-size: 0.85rem;
+            }
+        }
+    }
 }
 `;

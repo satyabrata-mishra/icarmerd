@@ -8,12 +8,12 @@ export default function IcramerdHome() {
         <Conatiner style={{ backgroundImage: `url(${bg})` }}>
             <div className="yr22">
                 <p>ICRAMERD - 23</p>
-                <p>24th - 25th Jul 2020</p>
+                <p>20th - 22nd July 2023</p>
                 <Link to="icramerd22">View More</Link>
             </div>
             <div className="yr23">
                 <p>ICRAMERD - 22</p>
-                <p>24th - 25th Sep 2021</p>
+                <p>24th - 25th Jul 2020</p>
                 <Link to="icramerd23">View More</Link>
             </div>
         </Conatiner>
@@ -40,7 +40,7 @@ background-position: center;
         font-weight: 600;
         letter-spacing: 0.05rem;
         border-bottom: 2px solid white;
-        width: 10.1rem;
+        width: 11rem;
         margin-bottom: 3rem;
     }
     a{

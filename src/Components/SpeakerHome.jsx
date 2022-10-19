@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import bg from "../Utils/bg3.webp";
-import sachin from "../Utils/sachin.webp";
 
 
 export default function SpeakerHome() {
@@ -10,32 +9,16 @@ export default function SpeakerHome() {
       <p>DISTINGUISHED SPEAKERS</p>
       <div className="cardsection">
         <div className="card">
-          <img src={sachin} alt="" />
-          <p>Dr. Sachin Kumar Mangla</p>
+          <img src="" alt="To be declared" />
+          <p>To be declared</p>
           <p>Knowledge Management and Decision Making</p>
           <p>Plymouth Business School, University of Plymouth, United Kingdom</p>
           <p>"The Do's and Don'ts for High Quality Research"</p>
           <p>11:15 am - 12:00 noon | 12th August 2022</p>
         </div>
         <div className="card">
-          <img src={sachin} alt="" />
-          <p>Dr. Sachin Kumar Mangla</p>
-          <p>Knowledge Management and Decision Making</p>
-          <p>Plymouth Business School, University of Plymouth, United Kingdom</p>
-          <p>"The Do's and Don'ts for High Quality Research"</p>
-          <p>11:15 am - 12:00 noon | 12th August 2022</p>
-        </div>
-        <div className="card">
-          <img src={sachin} alt="" />
-          <p>Dr. Sachin Kumar Mangla</p>
-          <p>Knowledge Management and Decision Making</p>
-          <p>Plymouth Business School, University of Plymouth, United Kingdom</p>
-          <p>"The Do's and Don'ts for High Quality Research"</p>
-          <p>11:15 am - 12:00 noon | 12th August 2022</p>
-        </div>
-        <div className="card">
-          <img src={sachin} alt="" />
-          <p>Dr. Sachin Kumar Mangla</p>
+          <img src="" alt="To be declared" />
+          <p>To be declared</p>
           <p>Knowledge Management and Decision Making</p>
           <p>Plymouth Business School, University of Plymouth, United Kingdom</p>
           <p>"The Do's and Don'ts for High Quality Research"</p>
@@ -118,11 +101,14 @@ const Container = styled.div`
       }
     }
     @media only screen and (max-width: 550px){
+      margin-top: 1.3rem;
       flex-direction: row;
+      padding: 0;
       p{
         margin-left: 3.5rem;
         font-size: 1.5rem;
         white-space: nowrap;
+        margin-top: 1.5rem;
       }
       .cardsection{
         margin-left: 4rem;

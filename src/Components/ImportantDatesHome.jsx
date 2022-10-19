@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import invitation from '../Utils/invitation card.webp';
 
 export default function ImportantDatesHome() {
   return (
@@ -10,34 +9,33 @@ export default function ImportantDatesHome() {
         <div className="container1">
             <div className="box">
                 <p>Paper Submission Deadline</p>
-                <p>Submission Closed</p>
-                <p>31st may 2022</p>
+                {/* <p>Submission Closed</p> */}
+                <p>30th April 2023</p>
             </div>
             <div className="box">
                 <p>Paper Acceptance Notification</p>
-                <p>Submission Closed</p>
-                <p>31st may 2022</p>
+                {/* <p>Submission Closed</p> */}
+                <p>15th May 2023</p>
             </div>
             <div className="box">
                 <p>Camera-Ready Paper Deadline</p>
-                <p>Submission Closed</p>
-                <p>31st may 2022</p>
+                {/* <p>Submission Closed</p> */}
+                <p>15th June 2023</p>
             </div>
             <div className="box">
                 <p>Registration Deadline</p>
-                <p>Submission Closed</p>
-                <p>31st may 2022</p>
+                {/* <p>Submission Closed</p> */}
+                <p>15th June 2023</p>
             </div>
         </div>
         <p className='already'>Already Registered? Check your details in the <Link to="/list-of-registred-papers">"List of Registration Forms & Camera-Ready Paper Recieved"</Link> now.</p>
         <div className="container2">
             <p>Conference Dates</p>
-            <p>12th-13th August 2022</p>
+            <p>20th-22nd of July 2023</p>
             <Link to="/registration">REGISTER NOW</Link>
         </div>
         <p>You Are Invited!</p>
-        <p className='invite'>Department of Mechanical Engineering, ITER, Siksha 'O' Anusandhan (Deemed to be University), and IIIE Odisha Chapter cordially invites you to the <span>Inaugural Ceremony</span> of the <span>3rd International Conference on Recent Advances in Mechanical Engineering Research and Development - 2022</span>.</p>
-        <img src={invitation} alt="" />
+        <p className='invite'>Department of Mechanical Engineering, ITER, Siksha 'O' Anusandhan (Deemed to be University), and IIIE Odisha Chapter cordially invites you to the <span>Inaugural Ceremony</span> of the <span>3rd International Conference on Recent Advances in Mechanical Engineering Research and Development - 2023</span>.</p>
     </Container>
   )
 }
@@ -144,7 +142,7 @@ p{
 }
 .invite{
     font-size: 0.8rem;
-    margin: 0 15rem;
+    margin: 1rem 15rem;
     border: none;
     text-align: justify;
     font-weight:400;
@@ -152,11 +150,6 @@ p{
         font-style: italic;
         font-weight: 600;
     }
-}
-img{
-    margin: 1rem 0;
-    width: 30rem;
-    border-radius: 10px;
 }
 @media only screen and (max-width: 550px){
     p{
@@ -192,11 +185,6 @@ img{
     .invite{
         margin: 0 1rem;
         font-size: 0.7rem;
-    }
-    img{
-        height: 38rem;
-        margin-left: 6rem;
-        /* width: 30rem; */
     }
 }
 `;
