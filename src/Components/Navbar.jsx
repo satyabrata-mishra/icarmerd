@@ -1,27 +1,38 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useLocation } from 'react-router-dom';
+
 
 export default function Navbar() {
+  const location = useLocation();
+  const naviagte = useNavigate();
+  const handleSelect = () => {
+    const val = parseInt(document.getElementById("pc").value);
+    if (val === 20)
+      naviagte("/icramerd20");
+    else if (val === 21)
+      naviagte("/icramerd21");
+    else if (val === 22)
+      naviagte("/icramerd22");
+  }
   return (
     <Container>
       <nav>
         <Link to="/">ICRAMERD</Link>
-        <Link to="/">Home</Link>
-        <Link to="">Previous Confrences
-          <ul>
-            <li><Link to="icramerd21">2022</Link></li>
-            <li><Link to="icramerd22">2023</Link></li>
-          </ul>
-        </Link>
-        <Link to="call-for-papers">Submission</Link>
-        <Link to="conference-theme">Conference Theme</Link>
-        <Link to="registration">Registration</Link>
-        <Link to="registration">Important Dates</Link>
-        <Link to="committees">Committees</Link>
-        <Link to="sponsorship">Sponsorship</Link>
-        <Link to="contact-us">Contact Us</Link>
-        <Link to="about-us">About Us</Link>
+        <Link className={location.pathname === "/" ? "locate" : ""} to="/">Home</Link>
+        <select name="pc" id="pc" onClick={handleSelect} className={location.pathname === "/icramerd20" || location.pathname === "/icramerd21" || location.pathname === "/icramerd22" ? "locate" : ""}>
+          <option className={location.pathname === "/icramerd20" ? "locate" : ""} value="20">2020</option>
+          <option className={location.pathname === "/icramerd21" ? "locate" : ""} value="21">2021</option>
+          <option className={location.pathname === "/icramerd22" ? "locate" : ""} value="22">2022</option>
+        </select>
+        <Link className={location.pathname === "/submission" ? "locate" : ""} to="submission">Submission</Link>
+        <Link className={location.pathname === "/conference-theme" ? "locate" : ""} to="conference-theme">Conference Theme</Link>
+        <Link className={location.pathname === "/registration" ? "locate" : ""} to="registration">Registration</Link>
+        <Link className={location.pathname === "/important-dates" ? "locate" : ""} to="important-dates">Important Dates</Link>
+        <Link className={location.pathname === "/committees" ? "locate" : ""} to="committees">Committees</Link>
+        <Link className={location.pathname === "/contact-us" ? "locate" : ""} to="contact-us">Contact Us</Link>
+        <Link className={location.pathname === "/sponsorship" ? "locate" : ""} to="sponsorship">Sponsorship</Link>
       </nav>
     </Container>
   )
@@ -36,6 +47,9 @@ nav{
     display: flex;
     align-items: center;
     height: 4.6rem;
+    .locate{
+      color: #06b6fb;
+    }
     a:nth-child(1){
       background-color: #fa4848;
       padding:1.72rem 2rem;
@@ -48,30 +62,17 @@ nav{
         color: white;
       }
     }
-    a:nth-child(3){
-      &:hover{
-        position: relative;
-        top: 1.9rem;
-        ul{
-          display: block;
-        }
-      }
-      ul{
-        display: none;
-        list-style: none;
-        width: 6.6rem;
-        background-color: #fa4848;
-        li{
-          padding:0.5rem 0.3rem;
-          a{
-            background-color: transparent;
-            font-size: 0.7rem;
-            color: #cec9c9;
-            &:hover{
-              color: white;
-            }
-          }
-        }
+    select{
+      background-color: transparent;
+      color: white;
+      outline: none;
+      border: none;
+      text-align: center;
+      font-size: 0.8rem;
+      cursor: pointer;
+      option{
+        background-color: #01012b;
+        border: none;
       }
     }
     a{

@@ -2,42 +2,46 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-export default function ImportantDatesHome() {
-  return (
-    <Container>
-        <p>Important Dates</p>
-        <div className="container1">
-            <div className="box">
-                <p>Paper Submission Deadline</p>
-                {/* <p>Submission Closed</p> */}
-                <p>30th April 2023</p>
+export default function ImportantDatesHome({ yr }) {
+    return (
+        <Container>
+            <p>Important Dates</p>
+            <div className="container1">
+                <div className="box">
+                    <p>Paper Submission Deadline</p>
+                    {/* <p>Submission Closed</p> */}
+                    <p>30th April 2023</p>
+                </div>
+                <div className="box">
+                    <p>Paper Acceptance Notification</p>
+                    {/* <p>Submission Closed</p> */}
+                    <p>15th May 2023</p>
+                </div>
+                <div className="box">
+                    <p>Camera-Ready Paper Deadline</p>
+                    {/* <p>Submission Closed</p> */}
+                    <p>15th June 2023</p>
+                </div>
+                <div className="box">
+                    <p>Registration Deadline</p>
+                    {/* <p>Submission Closed</p> */}
+                    <p>15th June 2023</p>
+                </div>
             </div>
-            <div className="box">
-                <p>Paper Acceptance Notification</p>
-                {/* <p>Submission Closed</p> */}
-                <p>15th May 2023</p>
+            {/* <p className='already'>Already Registered? Check your details in the <Link to="/list-of-registred-papers">"List of Registration Forms & Camera-Ready Paper Recieved"</Link> now.</p> */}
+            <div className="container2">
+                <p>Conference Dates</p>
+                <p>20th-22nd of July 2023</p>
+                <Link to="/registration">REGISTER NOW</Link>
             </div>
-            <div className="box">
-                <p>Camera-Ready Paper Deadline</p>
-                {/* <p>Submission Closed</p> */}
-                <p>15th June 2023</p>
-            </div>
-            <div className="box">
-                <p>Registration Deadline</p>
-                {/* <p>Submission Closed</p> */}
-                <p>15th June 2023</p>
-            </div>
-        </div>
-        <p className='already'>Already Registered? Check your details in the <Link to="/list-of-registred-papers">"List of Registration Forms & Camera-Ready Paper Recieved"</Link> now.</p>
-        <div className="container2">
-            <p>Conference Dates</p>
-            <p>20th-22nd of July 2023</p>
-            <Link to="/registration">REGISTER NOW</Link>
-        </div>
-        <p>You Are Invited!</p>
-        <p className='invite'>Department of Mechanical Engineering, ITER, Siksha 'O' Anusandhan (Deemed to be University), and IIIE Odisha Chapter cordially invites you to the <span>Inaugural Ceremony</span> of the <span>3rd International Conference on Recent Advances in Mechanical Engineering Research and Development - 2023</span>.</p>
-    </Container>
-  )
+            {yr === 23 &&
+                <>
+                    <p>You Are Invited!</p>
+                    <p className='invite'>Department of Mechanical Engineering, ITER, Siksha 'O' Anusandhan (Deemed to be University), and IIIE Odisha Chapter cordially invites you to the <span>Inaugural Ceremony</span> of the <span>4th International Conference on Recent Advances in Mechanical Engineering Research and Development - 2023</span>.</p>
+                </>
+            }
+        </Container>
+    )
 }
 const Container = styled.div`
 min-height: 26rem;
@@ -156,11 +160,11 @@ p{
         font-size: 1.3rem;
     }
     .container1{
-        margin-left: 13rem;
+        /* margin-left: 2rem; */
         .box{
             height: 5rem;
-            width: 7rem;
-            padding: 1rem;
+            width: 5.9rem;
+            padding: 0rem;
             border: 3px solid #242323;
             p:nth-child(1){
                 font-size: 0.7rem;
@@ -173,13 +177,17 @@ p{
             }
         }
     }
+    .container2{
+        width: 23.8rem;
+        p:nth-child(1){
+            font-size: 1.5rem;
+        }
+    }
     .already{
-        padding-left: 12rem;
-        font-size: 0.7rem;
-        width: 40rem;
-        margin-left: 3rem;
-        span{
-            font-size: 0.7rem;
+        font-size: 0.6rem;
+        width: 24.1rem;
+        a{
+            font-size: 0.6rem;
         }
     }
     .invite{

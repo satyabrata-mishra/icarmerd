@@ -1,15 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
-import img from '../Utils/iter.jpg';
+import img23 from '../Utils/iter23.jpg';
+import img22 from '../Utils/iter22.jpg'
 
 
-export default function CaraouselDes() {
+export default function CaraouselDes({yr}) {
     return (
         <Container>
             {/* <div className="scrolling">
                 <p>*Following up on this year's success, we are glad to announce the dates of ICRAMERD 2023. Coference Date: 20th - 22nd July, 2023. *</p>
             </div> */}
-            <img src={img} alt="" />
+            <img src={yr===23?img23:img22} alt="" />
         </Container>
     )
 }
@@ -58,7 +59,7 @@ const Container = styled.div`
         }
         img{
             height: 13rem;
-            width: 25rem;
+            width: 24.3rem;
         }
     }
 `;

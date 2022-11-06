@@ -8,7 +8,7 @@ export default function CallForPaperHome() {
         <p className='head'>CALL FOR PAPERS</p>
         <p>Participants from academia, R&D organizations and industries are invited to submit original and unpublished full research papers.</p>
         <br />
-        <p> <span>Selected papers of ICRAMERD-2022 will be published in different SCOPUS Indexed journals and proceedings</span>  based on the authors’ expression of interest and quality of paper which is recommended by Technical Review Committee/Editorial Board.</p>
+        <p> <span>Selected papers of ICRAMERD-2023 will be published in different SCOPUS Indexed journals and proceedings</span>  based on the authors’ expression of interest and quality of paper which is recommended by Technical Review Committee/Editorial Board.</p>
         {/* <Link to="/call-for-paper">Know More</Link> */}
     </Container>
   )

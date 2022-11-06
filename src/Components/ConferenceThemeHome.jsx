@@ -80,10 +80,9 @@ background-color: #01012b;
     }
 }
 @media only screen and (max-width: 550px){
-    width: 30rem;
     height: 15rem;
     .container1{
-        width: 15rem;
+        width: 16rem;
         height: 15rem;
         padding-left: 1.2rem;
         span{
@@ -103,10 +102,7 @@ background-color: #01012b;
         }
     }
     .container2{
-        img{
-            width: 15rem;
-            height: 15rem;
-        }
+        display: none;
     }
 }
 `;

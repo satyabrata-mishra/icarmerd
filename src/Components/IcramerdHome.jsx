@@ -6,37 +6,42 @@ import bg from "../Utils/bg2.webp";
 export default function IcramerdHome() {
     return (
         <Conatiner style={{ backgroundImage: `url(${bg})` }}>
-            <div className="yr22">
-                <p>ICRAMERD - 23</p>
-                <p>20th - 22nd July 2023</p>
-                <Link to="icramerd22">View More</Link>
+            <div className="yr20">
+                <p>ICRAMERD - 20</p>
+                <p>24th - 25th July 2020</p>
+                <Link to="icramerd20">View More</Link>
             </div>
-            <div className="yr23">
+            <div className="yr21">
+                <p>ICRAMERD - 21</p>
+                <p>24th - 25th September 2020</p>
+                <Link to="icramerd21">View More</Link>
+            </div>
+            <div className="yr22">
                 <p>ICRAMERD - 22</p>
-                <p>24th - 25th Jul 2020</p>
-                <Link to="icramerd23">View More</Link>
+                <p>11th - 13th August 2022</p>
+                <Link to="icramerd22">View More</Link>
             </div>
         </Conatiner>
     )
 }
 const Conatiner = styled.div`
-height: 20rem;
+min-height: 20rem;
 display: grid;
-grid-template-columns: 50% 50%;
+grid-template-columns: 33% 34% 33%;
 background-position: center;
 .yr22{
     background-color: rgb(123, 123, 253,0.5);
-    padding-top: 4rem;
-    padding-left: 8rem;
+    padding-top: 6rem;
+    padding-left: 3rem;
     p:nth-child(1){
         color: white;
-        font-size: 3.5rem;
+        font-size: 3rem;
         font-weight: 600;
         letter-spacing: 0.03rem;
     }
     p:nth-child(2){
         color: white;
-        font-size: 1rem;
+        font-size: 0.9rem;
         font-weight: 600;
         letter-spacing: 0.05rem;
         border-bottom: 2px solid white;
@@ -58,23 +63,57 @@ background-position: center;
         }
     }
 }
-.yr23{
+.yr21{
     background-color: rgb(245, 90, 90,0.5);
-    padding-top: 4rem;
-    padding-left: 8rem;
+    padding-top: 6rem;
+    padding-left: 3rem;
     p:nth-child(1){
         color: white;
-        font-size: 3.5rem;
+        font-size: 3rem;
         font-weight: 600;
         letter-spacing: 0.03rem;
     }
     p:nth-child(2){
         color: white;
-        font-size: 1rem;
+        font-size: 0.9rem;
         font-weight: 600;
         letter-spacing: 0.05rem;
         border-bottom: 2px solid white;
-        width: 10.5rem;
+        width: 13rem;
+        margin-bottom: 3rem;
+    }
+    a{
+        padding: 0.5rem 1.6rem;
+        text-decoration: none;
+        background-color: rgb(255, 255, 255,0.4);
+        color: white;
+        border: 1px solid white;
+        font-weight: 600;
+        font-size: 0.8rem;
+        transition: all 0.2s ease-in-out;
+        &:hover{
+            background-color: black;
+            color: white;
+        }
+    }
+}
+.yr20{
+    background-color: rgb(0, 128, 0,0.4);
+    padding-top: 6rem;
+    padding-left: 3rem;
+    p:nth-child(1){
+        color: white;
+        font-size: 3rem;
+        font-weight: 600;
+        letter-spacing: 0.03rem;
+    }
+    p:nth-child(2){
+        color: white;
+        font-size: 0.9rem;
+        font-weight: 600;
+        letter-spacing: 0.05rem;
+        border-bottom: 2px solid white;
+        width: 11rem;
         margin-bottom: 3rem;
     }
     a{
@@ -93,37 +132,23 @@ background-position: center;
     }
 }
 @media only screen and (max-width: 550px){
-    height: 18rem;
-    .yr22{
-        padding-top: 6rem;
-        padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    .yr20 , .yr21, .yr22{
+        padding: 1rem 0 1rem 1rem;
         p:nth-child(1){
-            font-size: 1.5rem;
-            letter-spacing: 0;
+            font-size: 2rem;
+            text-align: center;
         }
         p:nth-child(2){
-            font-size: 0.8rem;
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            margin-left: 5.5rem;
         }
         a{
-            height: 1rem;
-            width: 2rem;
-            font-size: 0.7rem;
-        }
-    }
-    .yr23{
-        padding-top: 6rem;
-        padding-left: 1rem;
-        p:nth-child(1){
-            font-size: 1.5rem;
-        }
-        p:nth-child(2){
-            font-size: 0.8rem;
-        }
-        a{
-            height: 1rem;
-            width: 2rem;
-            font-size: 0.7rem;
-            
+            padding: 0.4rem 1rem;
+            margin-left: 8rem;
         }
     }
 }
