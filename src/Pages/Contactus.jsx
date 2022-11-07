@@ -57,4 +57,9 @@ margin: 1rem 0;
         font-weight: 500;
     }
 }
+@media only screen and (max-width:  550px){
+    h2{
+        font-size: 1.4rem;
+    }
+}
 `;
