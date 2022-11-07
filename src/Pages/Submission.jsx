@@ -123,8 +123,12 @@ p:nth-child(11){
     font-size: 1rem;
   }
   a{
-    padding: 0.5rem;
-    font-size: 1rem;
+    padding: 0.3rem;
+    font-size: 0.9rem;
+  }
+  a:hover{
+    background-color: white;
+    color: black;
   }
   }
 `;
