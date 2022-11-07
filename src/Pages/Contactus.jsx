@@ -11,7 +11,7 @@ export default function Contactus() {
                     <p className='heading'>Convenor</p>
                     <p className='person'>Dr. Ankur Soam </p>
                     <p className='details'>Email: ankursoam@soa.ac.in</p>
-                    <p className='details'>Mob: 9114639291</p>
+                    <p className='details'>Mob: 7666839291</p>
                 </div>
                 <br />
                 <div className="sec1">

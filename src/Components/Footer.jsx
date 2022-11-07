@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import soa from '../Utils/soa logo.webp';
 
-export default function Footer({yr}) {
+export default function Footer({ yr }) {
     return (
         <Container>
             <div className="contains">
@@ -20,8 +20,8 @@ export default function Footer({yr}) {
                     <p>Bhubaneswar, Odisha, India</p>
                 </div>
                 <div className="container4">
-                    <p>Tel: 9114639291</p>
-                    <p>Email - {yr===20?"icramerd20@soa.ac.in":yr===21?"icramerd21@soa.ac.in":yr===22?"icramerd22@soa.ac.in":"icramerd23@soa.ac.in"}</p>
+                    <p>Tel: 7666839291</p>
+                    <p>Email - {yr === 20 ? "icramerd20@soa.ac.in" : yr === 21 ? "icramerd21@soa.ac.in" : yr === 22 ? "icramerd22@soa.ac.in" : "icramerd23@soa.ac.in"}</p>
                 </div>
             </div>
             <p className='copy'>&#169; 2023 by ICRAMERD.</p>
@@ -40,7 +40,7 @@ align-items: center;
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid white;
-    padding-bottom: 4rem;
+    padding-bottom: 5rem;
     .container1{
         height: 8rem;
         border-right: 1px solid white;
