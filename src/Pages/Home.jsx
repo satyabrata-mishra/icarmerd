@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components';
 import AboutHome from '../Components/AboutHome';
 import CallForPaperHome from '../Components/CallForPaperHome';
@@ -11,6 +11,10 @@ import SpeakerHome from '../Components/SpeakerHome';
 import Footer from '../Components/Footer';
 
 export default function Home() {
+  useEffect(() => {
+    document.title="ICRAMERD 2023 | HOME";
+  }, []);
+  
   return (
     <Container>
       <EventDescription yr={23} />

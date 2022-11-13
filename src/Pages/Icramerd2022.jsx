@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components';
 import CaraouselDes from '../Components/CaraouselDes';
 import EventDescription from '../Components/EventDescription';
@@ -6,6 +6,9 @@ import AboutHome from '../Components/AboutHome';
 import Footer from '../Components/Footer';
 
 export default function Icramerd2022() {
+    useEffect(() => {
+        document.title="ICRAMERD 2023 | 2022";
+      }, []);
     return (
         <Container>
             <EventDescription yr={22} />

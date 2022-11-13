@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import Footer from '../Components/Footer';
 
 export default function Committees() {
+    useEffect(() => {
+        document.title = "ICRAMERD 2023 | COMMITTEES";
+    }, []);
     return (
         <Container>
             <div className="committees">
@@ -95,7 +98,7 @@ export default function Committees() {
                 <p className='persons'>Dr. Tanmayee Khuntia</p>
                 <p className='persons'>Mrs. Tapaswinee Das</p>
             </div>
-            <Footer/>
+            <Footer />
         </Container>
     )
 }

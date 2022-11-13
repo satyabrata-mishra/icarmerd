@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import Footer from '../Components/Footer';
 
 export default function Contactus() {
+    useEffect(() => {
+        document.title = "ICRAMERD 2023 | CONTACT US";
+    }, []);
     return (
         <>
             <Container>
@@ -25,7 +28,7 @@ export default function Contactus() {
                     <p className='details'>Mob: 9439583624</p>
                 </div>
             </Container>
-            <Footer/>
+            <Footer />
         </>
     )
 }
