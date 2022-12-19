@@ -19,7 +19,7 @@ export default function Contactus() {
                 <br />
                 <div className="sec1">
                     <p className='heading'>Co-Convenor</p>
-                    <p className='person'>Dr. Prasant Sahoo</p>
+                    <p className='person'>Dr. Prasanta Kumar Sahoo</p>
                     <p className='details'>Email: prasantakumarsahoo@soa.ac.in</p>
                     <p className='details'>Mob: 8249032759</p>
                     <br />

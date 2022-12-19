@@ -3,16 +3,16 @@ import styled from 'styled-components';
 import bg from '../Utils/bg.webp';
 import soa from '../Utils/soa logo.webp';
 
-export default function EventDescription({yr}) {
+export default function EventDescription({ yr }) {
     return (
         <Container style={{ backgroundImage: `url(${bg})` }}>
             <div className="container1">
                 <img src={soa} alt="" />
             </div>
             <div className="container2">
-                <p>{yr===23?"4th":yr===22?"3rd":yr===21?"2nd":yr===20?"1st":""} International Conference on</p>
+                <p>{yr === 23 ? "4th" : yr === 22 ? "3rd" : yr === 21 ? "2nd" : yr === 20 ? "1st" : ""} International Conference on</p>
                 <p>Recent Advances in Mechanical Engineering Research and Development</p>
-                <p>ICRAMERD - {yr===23?"23":yr===22?"22":yr===21?"21":yr===20?"20":""}</p>
+                <p>ICRAMERD - {yr === 23 ? "23" : yr === 22 ? "22" : yr === 21 ? "21" : yr === 20 ? "20" : ""}</p>
             </div>
         </Container>
     )

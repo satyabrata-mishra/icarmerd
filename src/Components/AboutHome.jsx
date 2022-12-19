@@ -1,6 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import brochure from '../Utils/brochure.pdf';
+import brochure2020 from '../Utils/brochure2020.pdf';
+import brochure2021 from '../Utils/brochure2021.pdf';
+import brochure2022 from '../Utils/brochure2022.pdf';
+import brochure2023 from '../Utils/brochure2023.pdf';
 
 export default function AboutHome({yr}) {
   return (
@@ -11,7 +14,7 @@ export default function AboutHome({yr}) {
       <p className='desc'>Institute of Technical Education and Research (ITER) is the Faculty of Engineering and Technology of Siksha 'O' Anusandhan and is the oldest constituent institute. Since its inception in 1997, it is continuing to excel in the field of imparting education to students. It has worked with a mission to educate students and make them responsible, enlightened, and productive citizen to achieve global excellence. It has fourteen departments with more than five hundred faculty members.</p>
       <p className='heading'>ABOUT THE CONFERENCE</p>
       <p className='desc'>The International Conference on Recent advances in Mechanical Engineering Research and Development (ICRAMERD - {yr===23?"23":yr===22?"22":yr===21?"21":yr===20?"20":""}) is a three year young conference which accepts quality research papers, follows a peer review process and gets the proceedings published through reputed publishers indexed by SCOPUS. The scope of the conference is to provide a forum for researchers, scientists, academicians, scholars and industrial practitioners from across the world to present papers and exchange their ideas on topics of great importance and recent developments in broad fields of sustainable science, material science and engineering. With the increasing importance of automation, smart manufacturing, their applications in industrial robotics, energy storage and conversion, power system engineering, the conference targets to present latest research on novel materials, new strategies and innovations for overcoming the technical challenges of machine learning, IoT, mechatronics & robotics, Artificial Intelligence in manufacturing process, environmental science, renewable energy and automation in healthcare systems. The International Conference deliberations are being structured to cover the following themes (but not limited to).</p>
-      <a target="_blank" href={brochure} rel="noreferrer">Show Brochure</a> 
+      <a target="_blank" href={yr===23?brochure2023:(yr===22?brochure2022:(yr===21?brochure2021:(yr===20?brochure2020:"")))} rel="noreferrer">Show Brochure</a> 
     </Container>
   )
 }

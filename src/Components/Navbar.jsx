@@ -48,7 +48,7 @@ nav{
     align-items: center;
     height: 4.6rem;
     .locate{
-      color: #06b6fb;
+      border-bottom: 3px solid blue;
     }
     a:nth-child(1){
       background-color: #fa4848;
@@ -81,10 +81,9 @@ nav{
       color: white;
       font-size: 0.7rem;
       margin: 0 0.5rem;
-      /* font-family: 'Fredoka One', cursive; */
       font-family: 'Poppins', sans-serif;
       &:hover{
-        color: skyblue;
+        /* color: skyblue; */
       }
     }
 }

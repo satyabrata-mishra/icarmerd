@@ -4,13 +4,18 @@ import img23 from '../Utils/iter23.jpg';
 import img22 from '../Utils/iter22.jpg'
 
 
-export default function CaraouselDes({yr}) {
+export default function CaraouselDes({ yr }) {
     return (
         <Container>
-            {/* <div className="scrolling">
-                <p>*Following up on this year's success, we are glad to announce the dates of ICRAMERD 2023. Coference Date: 20th - 22nd July, 2023. *</p>
-            </div> */}
-            <img src={yr===23?img23:img22} alt="" />
+            {yr===23?<>
+                <div className="scrolling">
+                    <p>Please Note : Selected papers from the conference will be published by SPRINGER as a proceedings book volume. Springer will conduct quality checks on the accepted papers and only papers that pass these checks will be published.</p>
+                </div>
+                <div className="scrolling">
+                    <p>Please Note : Springer Nature does not charge any money for publication of Non-Open Access content. Abstracts/extended abstracts and short papers (less than 4 pages) are not considered for publication.</p>
+                </div>
+            </>:""}
+            <img src={yr === 23 ? img23 : img22} alt="" />
         </Container>
     )
 }
@@ -23,18 +28,18 @@ const Container = styled.div`
     flex-direction: column;
     p{
         color: white;
-        background-color: #fe5252;
         font-weight: 600;
         font-size: 0.85rem;
-        padding: 0.2rem 1rem;
+        padding: 0rem 1rem;
     }
     .scrolling{
         background-color: transparent;
-        width: 54rem;
+        width: 50rem;
         height: 2rem;
+        white-space: nowrap;
         overflow: hidden;
         p{
-            animation: scroller 25s linear infinite;
+            animation: scroller 20s linear infinite;
             background-color: transparent;
         }
     }
@@ -44,10 +49,10 @@ const Container = styled.div`
     }
     @keyframes scroller {
         0%{
-            transform: translateX(100%);
+            transform: translateX(90%);
         }
         100%{
-            transform: translateX(-100%);
+            transform: translateX(-90%);
         }
     }
     @media only screen and (max-width: 550px){
