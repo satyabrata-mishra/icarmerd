@@ -47,12 +47,12 @@ export default function Registration() {
                 <p className='star'>*Early bird offer is valid upto 15 June, 2023.</p>
                 <h2>PAYMENT DETAILS</h2>
                 <div className="bankdetails">
-                    <p>Account No:<span> 6762002100000239</span></p>
-                    <p>Beneficiary Name:<span> SIKSHA O ANUSANDHAN</span></p>
-                    <p>Bank:<span> PUNJAB NATIONAL BANK</span></p>
-                    <p>IFSC Code:<span> PUNB0676200</span></p>
-                    <p>MICR Code:<span> 751024011</span></p>
-                    <p>BRANCH:<span> POKHARIPUT, KHANDAGIRI, ODISHA.</span></p>
+                    <p>Account No:<span> 50200050207231</span></p>
+                    <p>Beneficiary Name:<span> SIKSHA O ANUSANDHAN UNIVERSITY</span></p>
+                    <p>Bank:<span> HDFC BANK</span></p>
+                    <p>IFSC Code:<span> HDFC0003722</span></p>
+                    {/* <p>MICR Code:<span> 751024011</span></p> */}
+                    <p>BRANCH:<span> HDFC BANK, JAGAMARA, BHUBANESWAR</span></p>
                 </div>
                 <p className='end'>*After registration please send the payment details to <span>icramerd23@soa.ac.in</span> </p>
             </Container>
