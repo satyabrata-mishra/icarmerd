@@ -20,7 +20,7 @@ export default function Footer({ yr }) {
                     <p>Bhubaneswar, Odisha, India</p>
                 </div>
                 <div className="container4">
-                    <p>Tel: 7666839291</p>
+                    <p>Tel: 9439583624</p>
                     <p>Email - {yr === 20 ? "icramerd20@soa.ac.in" : yr === 21 ? "icramerd21@soa.ac.in" : yr === 22 ? "icramerd22@soa.ac.in" : "icramerd23@soa.ac.in"}</p>
                 </div>
             </div>

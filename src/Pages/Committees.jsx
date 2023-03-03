@@ -27,11 +27,11 @@ export default function Committees() {
                 <p className='persons'>Dr. Sasanka Choudhury, Dept. of Mechanical Engineering, ITER, S‘O’A (Deemed to be University)</p>
                 <br />
                 <p className='heading'>Convenor</p>
-                <p className='persons'>Dr. Ankur Soam, Dept. of Mechanical Engineering, ITER, S‘O’A (Deemed to be University)</p>
+                <p className='persons'>Dr. Pragyan Senapati, Dept. of Mechanical Engineering, ITER, S‘O’A (Deemed to be University)</p>
                 <br />
                 <p className='heading'>Co. Convenor</p>
                 <p className='persons'>Dr. Prasant Sahoo, Dept. of Mechanical Engineering, ITER, S‘O’A (Deemed to be University)</p>
-                <p className='persons'>Dr. Pragyan Senapati, Dept. of Mechanical Engineering, ITER, S‘O’A (Deemed to be University)</p>
+                <p className='persons'>Dr. Tanmayee Khuntia, Dept. of Mechanical Engineering, ITER, S‘O’A (Deemed to be University)</p>
                 <br />
                 <p className='heading'>Local Advisory Board</p>
                 <p className='persons'>Prof.  P. K. Sahoo, Dean, ITER, S‘O’A (Deemed to be University)</p>
@@ -80,7 +80,7 @@ export default function Committees() {
                 <p className='persons'>Dr. Jajneswar Nanda</p>
                 <p className='persons'>Dr. Manoj Kumar Nayak</p>
                 <p className='persons'>Dr. Pragyan Patnaik</p>
-                <p className='persons'>Mr. Priyaranjan Biswal</p>
+                <p className='persons'>Dr. Priyaranjan Biswal</p>
                 <p className='persons'>Mr. Rajat Kumar Das</p>
                 <p className='persons'>Mrs. Rashmi Ray</p>
                 <p className='persons'>Dr. Seshadev Sahoo</p>
@@ -93,10 +93,10 @@ export default function Committees() {
                 <p className='persons'>Dr. Shakti Prakash Jena</p>
                 <p className='persons'>Dr. Siba Sankar Mohapatra</p>
                 <p className='persons'>Mr. S. R. Rout</p>
-                <p className='persons'>Mr. Subhrajit Beura</p>
+                <p className='persons'>Dr. Subhrajit Beura</p>
                 <p className='persons'>Ms. Swetarani Biswal</p>
                 <p className='persons'>Dr. Tanmayee Khuntia</p>
-                <p className='persons'>Mrs. Tapaswinee Das</p>
+                <p className='persons'>Dr. Tapaswinee Das</p>
             </div>
             <Footer />
         </Container>
