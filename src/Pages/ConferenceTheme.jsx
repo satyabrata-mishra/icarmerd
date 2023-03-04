@@ -73,7 +73,7 @@ export default function ConferenceTheme() {
                 Energy Engineering, Fuel Cell, Alternative Fuel, Sustainable Energy System, Energy Saving Devices- Batteries and Supercapacitors.
             </p>
             <p className='footer1'>Participants from academia, R&D organizations and industries are invited to submit original and unpublished full research papers. </p>
-            <p className='footer2'>All articles will be peer reviewed and accepted ones will be considered for publications in SCOPUS Indexed journals and proceedings based on the authors' expression of interest and quality of paper which is recommended by Technical Review Committee/Editorial Board. </p>
+            <p className='footer2'>All articles will be peer reviewed and accepted ones will be considered for publications in SCOPUS Indexed book chapters and proceedings based on the authors' expression of interest and quality of paper which is recommended by Technical Review Committee/Editorial Board. </p>
             <p className='footer3'>At least one author of the accepted paper has to register and present the paper in the conference.</p>
         </Container>
         <Footer/>
