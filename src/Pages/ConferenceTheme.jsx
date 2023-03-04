@@ -2,10 +2,13 @@ import React, { useEffect } from 'react'
 import styled from 'styled-components';
 import Footer from '../Components/Footer';
 
-export default function ConferenceTheme() {
+export default function ConferenceTheme({handleScroll}) {
+
     useEffect(() => {
         document.title="ICRAMERD 2023 | CONFERENCE THEME";
+        handleScroll();
       }, []);
+
     return (
         <>
         <Container>

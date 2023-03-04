@@ -5,9 +5,10 @@ import EventDescription from '../Components/EventDescription';
 import AboutHome from '../Components/AboutHome';
 import Footer from '../Components/Footer';
 
-export default function Icramerd2020() {
+export default function Icramerd2020({handleScroll}) {
     useEffect(() => {
         document.title="ICRAMERD 2023 | 2020";
+        handleScroll();
       }, []);
     return (
         <Container>

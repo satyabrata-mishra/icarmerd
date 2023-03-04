@@ -3,10 +3,13 @@ import styled from 'styled-components';
 import ImportantDate from '../Components/ImportantDatesHome';
 import Footer from '../Components/Footer';
 
-export default function ImportantDates() {
+export default function ImportantDates({handleScroll}) {
+
   useEffect(() => {
     document.title="ICRAMERD 2023 | IMPORTANT DATES";
+    handleScroll();
   }, []);
+
   return (
     <Container>
         <ImportantDate/>

@@ -2,10 +2,13 @@ import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import Footer from '../Components/Footer';
 
-export default function Contactus() {
+export default function Contactus({handleScroll}) {
+
     useEffect(() => {
         document.title = "ICRAMERD 2023 | CONTACT US";
+        handleScroll();
     }, []);
+
     return (
         <>
             <Container>

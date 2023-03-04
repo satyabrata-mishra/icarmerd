@@ -13,20 +13,27 @@ import ConferenceTheme from './Pages/ConferenceTheme';
 import Registration from './Pages/Registration';
 
 function App() {
+  const handleScroll = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/icramerd22" element={<Icramerd2022 />} />
-        <Route path="/icramerd21" element={<Icramerd2021 />} />
-        <Route path="/icramerd20" element={<Icramerd2020 />} />
-        <Route path="/submission" element={<Submission />} />
-        <Route path="/conference-theme" element={<ConferenceTheme />} />
-        <Route path="/registration" element={<Registration />} />
-        <Route path="/important-dates" element={<ImportantDates />} />
-        <Route path="/committees" element={<Committees />} />
-        <Route path="/contact-us" element={<Contactus />} />
+        <Route path="/" element={<Home handleScroll={handleScroll} />} />
+        <Route path="/icramerd22" element={<Icramerd2022 handleScroll={handleScroll} />} />
+        <Route path="/icramerd21" element={<Icramerd2021 handleScroll={handleScroll} />} />
+        <Route path="/icramerd20" element={<Icramerd2020 handleScroll={handleScroll} />} />
+        <Route path="/submission" element={<Submission handleScroll={handleScroll} />} />
+        <Route path="/conference-theme" element={<ConferenceTheme handleScroll={handleScroll} />} />
+        <Route path="/registration" element={<Registration handleScroll={handleScroll} />} />
+        <Route path="/important-dates" element={<ImportantDates handleScroll={handleScroll} />} />
+        <Route path="/committees" element={<Committees handleScroll={handleScroll} />} />
+        <Route path="/contact-us" element={<Contactus handleScroll={handleScroll} />} />
       </Routes>
     </BrowserRouter>
   );

@@ -5,10 +5,13 @@ import EventDescription from '../Components/EventDescription';
 import AboutHome from '../Components/AboutHome';
 import Footer from '../Components/Footer';
 
-export default function Icramerd2021() {
+export default function Icramerd2021({handleScroll}) {
+    
     useEffect(() => {
         document.title="ICRAMERD 2023 | 2021";
+        handleScroll();
       }, []);
+
     return (
         <Container>
             <EventDescription yr={21} />

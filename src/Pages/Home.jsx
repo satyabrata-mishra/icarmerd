@@ -10,9 +10,11 @@ import ImportantDatesHome from '../Components/ImportantDatesHome';
 import SpeakerHome from '../Components/SpeakerHome';
 import Footer from '../Components/Footer';
 
-export default function Home() {
+export default function Home({handleScroll}) {
+
   useEffect(() => {
     document.title="ICRAMERD 2023 | HOME";
+    handleScroll();
   }, []);
   
   return (
