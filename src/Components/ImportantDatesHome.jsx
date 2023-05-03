@@ -10,22 +10,22 @@ export default function ImportantDatesHome({ yr }) {
                 <div className="box">
                     <p>Paper Submission Deadline</p>
                     {/* <p>Submission Closed</p> */}
-                    <p>30th April 2023</p>
+                    <p>30th May 2023</p>
                 </div>
                 <div className="box">
                     <p>Paper Acceptance Notification</p>
                     {/* <p>Submission Closed</p> */}
-                    <p>15th May 2023</p>
+                    <p>15th June 2023</p>
                 </div>
                 <div className="box">
                     <p>Camera-Ready Paper Deadline</p>
                     {/* <p>Submission Closed</p> */}
-                    <p>15th June 2023</p>
+                    <p>5th July 2023</p>
                 </div>
                 <div className="box">
                     <p>Registration Deadline</p>
                     {/* <p>Submission Closed</p> */}
-                    <p>15th June 2023</p>
+                    <p>5th July 2023</p>
                 </div>
             </div>
             {/* <p className='already'>Already Registered? Check your details in the <Link to="/list-of-registred-papers">"List of Registration Forms & Camera-Ready Paper Recieved"</Link> now.</p> */}
