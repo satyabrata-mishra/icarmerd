@@ -10,7 +10,7 @@ export default function ImportantDatesHome({ yr }) {
                 <div className="box">
                     <p>Paper Submission Deadline</p>
                     {/* <p>Submission Closed</p> */}
-                    <p>30th May 2023</p>
+                    <p>5th June 2023</p>
                 </div>
                 <div className="box">
                     <p>Paper Acceptance Notification</p>
