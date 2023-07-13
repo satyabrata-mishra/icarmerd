@@ -60,8 +60,8 @@ p{
     display: flex;
     .box{
         border: 5px solid #242323;
-        height: 7rem;
-        width: 11rem;
+        height: 11rem;
+        width: 13.25rem;
         padding: 2rem 1rem;
         p{
             font-size: 0.9rem;
