@@ -11,13 +11,25 @@ import Pradyumna from "../Utils/Speakers/Pradyumna.jpeg";
 import SASherif from "../Utils/Speakers/SA-Sherif-Picture-1.jpg";
 import Sisir from "../Utils/Speakers/Sisir.jpeg";
 import SK from "../Utils/Speakers/S.K.Patnaik.jpg";
-import Poonam from "../Utils/Speakers/Poonam Kumari.jpg";
 import Jaiveer from "../Utils/Speakers/Jaiveer Singh.jpg";
+import AKRAY from "../Utils/Speakers/AK Ray.jpg";
+import Sushant from "../Utils/Speakers/Sushant.jpg";
+import Balakrushna from "../Utils/Speakers/Dr Balakrushna Panda.jpg";
 
 
 export default function SpeakerHome() {
   return (
     <Container style={{ backgroundImage: `url(${bg})` }}>
+      <p>OUR CHIEF GUEST</p>
+      <div className="cardsection">
+        <div className="speakerDetails">
+          <img src={Balakrushna} alt="Dr Balakrushna Panda" style={{ height: "40vh", width: "13vw" }} />
+          <p className='Name'>Dr. Balakrushna Panda</p>
+          <p className='Designation'>Export Oriented Units East and North Eastern States of India Ministry of COMM, GOVT of India</p>
+          <p className='About'>Transformed EPFO and CMPFO, two of the largest social security organizations in India. Brought reforms and transparency in EPFO for the benefit of 5 crore members & 7 lakh employers, implemented online system for i) Filing of Returns ii) Receipt of subscription & iii) Payments to members. SMS facility was introduced at each stage of progress to bring transparency. Dashboard was placed in public domain which was updated on a real-time basis. This has drastically reduced footfall and human interference. In Coal Mines Provident Fund Organization, raised the yield through competitive transparent bidding system, introduced e-governance, streamlined and achieved timely settlement of PF and pension in a self- devised mission mode called, ‘Mission Viswas’.Assisted three different ministers at the Union of India on parliament and political matters of National and International level; Assisted ministers’ electoral campaign planning and communication as their personal secretary; carried out the scheduling the political appointments of the ministers, area development and public relation in the political constituency off the ministers.</p>
+          {/* <p className='date'>11:15AM - 12:00PM, 22nd July 2023(Saturday)</p> */}
+        </div>
+      </div>
       <p>OUR ESTEEMED SPEAKERS</p>
       <div className="cardsection">
         <Carousel interval={null}>
@@ -36,7 +48,7 @@ export default function SpeakerHome() {
               <p className='Name'>Mr. Satya Swaroop Panda</p>
               <p className='Designation'>Director at Collins Aerospace, Bengaluru, Karnataka, India</p>
               <p className='About'>Engineering leader with 24+ years of experience in leading global engineering and technology teams with complete end to end ownership. Demonstrated leadership in working with cross functional teams in highly matrixed organizational structure. Held roles of increasing responsibilities in industries spanning automobiles, aviation and energy. Experienced in diversified domains such as product development, aftermarkets, R&D, cost out & productivity, product localization, setting up lab etc. Established technology team at Collins India Interiors Division and Matured the team to handle projects across multiple portfolio and program applications. Championed innovation strategies and delivered 100+ patents. Coordinate technology programs across Collins Global Engineering Centers and represent at Collins SBU strategic BU roadmap development sessions.</p>
-              <p className='date'>4:00PM - 4:45PM, 22nd July 2023(Saturday)</p>
+              <p className='date'>9:30AM - 10:15AM, 22nd July 2023(Saturday)</p>
             </div>
           </Carousel.Item>
           <Carousel.Item>
@@ -59,11 +71,11 @@ export default function SpeakerHome() {
           </Carousel.Item>
           <Carousel.Item>
             <div className="speakerDetails">
-              <img src="" alt="Dr Praveen Kumar" style={{ height: "40vh", width: "15vw" }} />
-              <p className='Name'>Dr Praveen Kumar</p>
-              <p className='Designation'></p>
-              <p className='About'></p>
-              <p className='date'>9:30AM - 10:15AM, 22nd July 2023(Saturday)</p>
+              <img src={AKRAY} alt="DR. AK Ray" style={{ height: "40vh", width: "18vw" }} />
+              <p className='Name'>Dr. AK Ray</p>
+              <p className='Designation'>Adviser, Lechler (India) Pvt. Limited, KolkataFormer General Manager(Quality), SAIL</p>
+              <p className='About'>Dr. A. K. Ray graduated with Honours in Chemical Engineering from Jadavpur University in 1974. He did his Masters’ in Chemical Engineering from IIT Kanpur and Ph. D. in Metallurgical Engineering from IIT Kharagpur. After a brief stay of about one and a half year each at Indian Iron and Steel Company, Burnpur and Indian Oil Corporation, he joined Research & Development Centre for Iron & Steel (RDCIS), SAIL, Ranchi in 1978. After a long stay at RDCIS, SAIL, Ranchi, he assumed charge of General Manager (Quality) at Durgapur Steel Plant (DSP), SAIL in 2008.Dr Ray was instrumental in commissioning Sponge Iron Pilot Plant and associated Process Research Laboratory and carried out R & D activities related to Sponge Iron & other Alternate Iron Making processes, Steelmaking and Continuous Casting. He established Computational Laboratory at RDCIS and carried out mathematical and physical simulation of different metallurgical processes. Dr. Ray has authored a Book on “Rotary Kiln Sponge Ironmaking”. He has to his credit about 120 research publications and three patents. He has received various awards and accolades.</p>
+              <p className='date'>12:00PM - 12:45PM, 21st July 2023(Thursday)</p>
             </div>
           </Carousel.Item>
           <Carousel.Item>
@@ -86,15 +98,6 @@ export default function SpeakerHome() {
           </Carousel.Item>
           <Carousel.Item>
             <div className="speakerDetails">
-              <img src={Poonam} alt="Dr. S. Pradyumna" style={{ height: "40vh", width: "17vw" }} />
-              <p className='Name'>Dr. Poonam Kumari</p>
-              <p className='Designation'>Associate Professor, Department of Mechanical Engineering, IIT Guwahati</p>
-              <p className='About'></p>
-              <p className='date'>12:00PM - 12:45PM, 21st July 2023(Friday)</p>
-            </div>
-          </Carousel.Item>
-          <Carousel.Item>
-            <div className="speakerDetails">
               <img src={Jaiveer} alt="Dr. Jaiveer Singh" style={{ height: "40vh", width: "15vw" }} />
               <p className='Name'>Dr. Jaiveer Singh</p>
               <p className='Designation'>Department of Metallurgical and Materials Engineering, IIT Jodhpur, Rajastan</p>
@@ -104,10 +107,10 @@ export default function SpeakerHome() {
           </Carousel.Item>
           <Carousel.Item>
             <div className="speakerDetails">
-              <img src="" alt="Mr Sushanta Kumar Das" style={{ height: "40vh", width: "15vw" }} />
+              <img src={Sushant} alt="Mr Sushanta Kumar Das" style={{ height: "40vh", width: "15vw" }} />
               <p className='Name'>Mr Sushanta Kumar Das</p>
-              <p className='Designation'></p>
-              <p className='About'></p>
+              <p className='Designation'>Associate Vice President(Logistics, Packaging and Contract Cell), KROSAKI GROUP</p>
+              <p className='About'>Broad Topic:Silica Refractories</p>
               <p className='date'>12:00PM - 12:45PM, 22nd July 2023(Saturday)</p>
             </div>
           </Carousel.Item>
